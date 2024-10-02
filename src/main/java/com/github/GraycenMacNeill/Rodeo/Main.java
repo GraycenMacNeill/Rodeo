@@ -6,5 +6,6 @@ public class Main {
         System.out.println("My name is John Doe");
         System.out.println("I'm a software engineer");
         System.out.println("I live in New York City");
+        System.out.println("I enjoy coding in Java");
     }
 }
