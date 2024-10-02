@@ -12,7 +12,7 @@ public class Functions {
         for (int i = 0; i < 3; i++) {  // Loop for a few iterations of the animation
             for (String step : loadingSteps) {
                 System.out.print("\r" + step);  // \r moves the cursor back to the start of the line
-                delay(100); }}
+                delay(1); }}
         System.out.println("\r         ");
     }
 

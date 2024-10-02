@@ -2,33 +2,41 @@ package com.github.GraycenMacNeill.Rodeo;
 
 public class Inventory {
 
-    public static int ammo = 0;
+    public static int ammo = 3;
+    public static int medkit = 0;
 
-    // This function adds the specified amount of ammo to the player's inventory'
+    // This function adds the specified amount of ammo to the player's inventory
     public static void addAmmo(int ammoAmount) {
-        ammo = ammo + ammoAmount;
+        if (ammoAmount == 1) {
+            ammo = ammo + ammoAmount;
+            System.out.println(UIManager.GREEN + "▸ You gained " + ammoAmount + " bullet.");
+        } else {
+            ammo = ammo + ammoAmount;
+            System.out.println(UIManager.GREEN + "▸ You gained " + ammoAmount + " bullets.");
+        }
     }
 
-    // This function subtracts the total amount of ammo from the player's inventory
+    // This function subtracts the "totalAmount" amount of ammo from the player's inventory
     public static void subtractAmmo(int ammoAmount) {
         if (ammo > 0) {
             ammo = ammo - ammoAmount;
-        } else {}
+        }
     }
 
-    public static int food = 0;
-
-    // This function adds the specified amount of food to the player's inventory
-    public static void addFood(int foodAmount) {
-        food = food + foodAmount;
+    // This function adds the specified amount of medkit to the player's inventory
+    public static void addMedkit(int medkitAmount) {
+        if (medkitAmount == 1) {
+            medkit = medkit + medkitAmount;
+            System.out.println(UIManager.GREEN + "▸ You gained " + medkitAmount + " medkit.");
+        } else {
+            medkit = medkit + medkitAmount;
+            System.out.println(UIManager.GREEN + "▸ You gained " + medkitAmount + " medkits.");
+        }
     }
 
-    // This function subtracts the total amount of food from the player's inventory
-    public static void subtractFood(int foodAmount) {
-        if (food > 0) {
-            food = food - foodAmount;
-        } else {}
-    }
+
+
+
 
 
 
