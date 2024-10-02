@@ -1,2 +1,2 @@
 # Rodeo
- A fun little wild west themed game.
+Project start date: Oct 2nd, 2024
