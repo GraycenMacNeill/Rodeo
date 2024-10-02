@@ -5,6 +5,9 @@ import java.lang.Thread;
 
 public class Functions {
 
+
+
+
     // Function to display a loading screen with a customizable animation
     public static void loadingScreen() {
         String[] loadingSteps = {"⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"};  // Loading animations

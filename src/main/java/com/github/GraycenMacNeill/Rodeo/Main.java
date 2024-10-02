@@ -16,11 +16,19 @@ public class Main {
 
         Functions.loadingScreen();
 
+        System.out.println("\nWelcome, " + firstName + " " + lastName + "!");
         Inventory.addAmmo(5);
         Inventory.addAmmo(1);
         Inventory.subtractAmmo(2);
-        Inventory.addMedkit(1);
-        Inventory.addMedkit(3);
+        System.out.println(UIManager.RED + "▸ Uh oh! You lost 1,000,000 dollars!" );
+        Inventory.addScrap(100000000);
+        Inventory.subtractScrap(99020);
+        System.out.println(Inventory.scrap);
+        Inventory.setAmmo(2);
+        System.out.println(Inventory.ammo);
+
+        System.out.println("Thomas Macduff: " + firstName + ", let's go!");
+
 
 
 

@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="490d2cf3-c1b8-4123-affa-79bd66e7637c" name="Changes" comment="Added basic functions">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/GraycenMacNeill/Rodeo/UIManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/GraycenMacNeill/Rodeo/Functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/GraycenMacNeill/Rodeo/Functions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/GraycenMacNeill/Rodeo/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/GraycenMacNeill/Rodeo/Inventory.java" afterDir="false" />
@@ -129,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727897094159</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added basic functions">
+      <option name="closed" value="true" />
+      <created>1727907776355</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727907776355</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
