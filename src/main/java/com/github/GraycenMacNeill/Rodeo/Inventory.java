@@ -3,8 +3,8 @@ package com.github.GraycenMacNeill.Rodeo;
 public class Inventory {
 
     public static int ammo = 0;
-    public static int medkit = 0;
     public static int scrap = 0;
+    public static boolean isWeaponBroken = true;
 
     // These are the ammo functions for adding, removing, and setting the ammo value.
     /*--------------------------------------------------------------------------------------------*/
@@ -30,6 +30,7 @@ public class Inventory {
     }
 
     // These are the scrap functions for adding, removing, and setting the scrap value.
+    // These also include repairing the player's weapon
     /*--------------------------------------------------------------------------------------------*/
     public static void addScrap(int scrapAmount) {
         if (scrapAmount == 1) {
@@ -51,6 +52,27 @@ public class Inventory {
     public static void setScrap(int scrapAmount) {
         scrap = scrapAmount;
     }
+
+    public static void repairWeapon() {
+        if (!isWeaponBroken) {
+            System.out.println(UIManager.YELLOW + "▸ Your weapon is still in good condition!");
+        } else {
+            if (scrap > 0) {
+                System.out.println(UIManager.YELLOW + "▸ Repairing your weapon...");
+
+                Functions.loadingScreen();
+
+                isWeaponBroken = false;
+                System.out.println(UIManager.GREEN + "▸ Your weapon has been repaired!");
+                subtractScrap(1);
+            } else {
+                System.out.println(UIManager.RED + "▸ You don't have enough scrap parts to repair your weapon!");
+            }
+
+        }
+
+    }
+
 
 
 

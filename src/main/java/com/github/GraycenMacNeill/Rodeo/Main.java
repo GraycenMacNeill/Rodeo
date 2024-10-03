@@ -20,14 +20,19 @@ public class Main {
         Inventory.addAmmo(5);
         Inventory.addAmmo(1);
         Inventory.subtractAmmo(2);
-        System.out.println(UIManager.RED + "▸ Uh oh! You lost 1,000,000 dollars!" );
+        System.out.println(UIManager.RED + "▸ Uh oh! You lost 1,000,000 bullets!" );
         Inventory.addScrap(100000000);
         Inventory.subtractScrap(99020);
         System.out.println(Inventory.scrap);
         Inventory.setAmmo(2);
         System.out.println(Inventory.ammo);
 
-        System.out.println("Thomas Macduff: " + firstName + ", let's go!");
+        System.out.println(UIManager.BLUE + "✶ Thomas Wayne: " + UIManager.WHITE + firstName + ", let's go!" + UIManager.RESET);
+
+        System.out.println(Inventory.isWeaponBroken);
+        Inventory.repairWeapon();
+        System.out.println(Inventory.isWeaponBroken);
+
 
 
 
