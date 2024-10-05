@@ -12,4 +12,23 @@ public class UIManager {
     public static final String WHITE = "\u001B[0m";
     public static final String CYAN = "\u001B[36m";
     public static final String GRAY = "\u001B[37m";
+    public static final String ITALICIZED = "\u001B[3m";
+
+
+    public static void typeOut(String message, int delay) throws InterruptedException {
+        // Loop through each character in the message
+        for (char c : message.toCharArray()) {
+            // Print the character
+            System.out.print(c);
+
+            // Flush the output to ensure it's displayed immediately
+            System.out.flush();
+
+            // Pause for the specified delay
+            Thread.sleep(delay); // Increase the delay if necessary, e.g., 100ms
+        }
+        // Print a newline after the message
+        System.out.println();
+    }
+
 }

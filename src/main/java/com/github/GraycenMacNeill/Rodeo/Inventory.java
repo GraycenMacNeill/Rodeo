@@ -4,7 +4,7 @@ public class Inventory {
 
     public static int ammo = 0;
     public static int scrap = 0;
-    public static boolean isWeaponBroken = true;
+    public static boolean weaponBroken = true;
 
     // These are the ammo functions for adding, removing, and setting the ammo value.
     /*--------------------------------------------------------------------------------------------*/
@@ -54,7 +54,7 @@ public class Inventory {
     }
 
     public static void repairWeapon() {
-        if (!isWeaponBroken) {
+        if (!weaponBroken) {
             System.out.println(UIManager.YELLOW + "▸ Your weapon is still in good condition!");
         } else {
             if (scrap > 0) {
@@ -62,7 +62,7 @@ public class Inventory {
 
                 Functions.loadingScreen();
 
-                isWeaponBroken = false;
+                weaponBroken = false;
                 System.out.println(UIManager.GREEN + "▸ Your weapon has been repaired!");
                 subtractScrap(1);
             } else {

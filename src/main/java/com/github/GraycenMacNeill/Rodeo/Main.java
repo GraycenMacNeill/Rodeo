@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+
+        int selection;
 
         Scanner input = new Scanner(System.in);
 
@@ -16,27 +18,14 @@ public class Main {
 
         Functions.loadingScreen();
 
-        System.out.println("\nWelcome, " + firstName + " " + lastName + "!");
-        Inventory.addAmmo(5);
-        Inventory.addAmmo(1);
-        Inventory.subtractAmmo(2);
-        System.out.println(UIManager.RED + "▸ Uh oh! You lost 1,000,000 bullets!" );
-        Inventory.addScrap(100000000);
-        Inventory.subtractScrap(99020);
-        System.out.println(Inventory.scrap);
-        Inventory.setAmmo(2);
-        System.out.println(Inventory.ammo);
+        UIManager.typeOut(UIManager.GRAY + UIManager.ITALICIZED + "You’re lost in deep sleep, the kind that feels endless, until a sudden, violent banging shatters", 25);
+        UIManager.typeOut("the silence. It’s coming from outside, each thud growing louder, more urgent… something’s out", 25);
+        UIManager.typeOut("there, and it’s getting closer..." + UIManager.RESET, 25);
+        input.nextLine();
 
-        System.out.println(UIManager.BLUE + "✶ Thomas Wayne: " + UIManager.WHITE + firstName + ", let's go!" + UIManager.RESET);
-
-        System.out.println(Inventory.isWeaponBroken);
-        Inventory.repairWeapon();
-        System.out.println(Inventory.isWeaponBroken);
-
-
-
-
-
+        System.out.println(UIManager.BLUE + "\nJoseph Scotch: " + UIManager.RESET);
+        UIManager.typeOut("By thunder! " + firstName + ", they’re bustin’ through the back door! Get ready, or we’re done for!", 25);
 
     }
+
 }
