@@ -2,8 +2,10 @@ package com.github.GraycenMacNeill.Rodeo;
 
 public class Inventory {
 
+    // Player's inventory variables
     public static int ammo = 0;
     public static int scrap = 0;
+    public static int bandages = 0;
     public static boolean weaponBroken = true;
 
     // These are the ammo functions for adding, removing, and setting the ammo value.
@@ -53,6 +55,8 @@ public class Inventory {
         scrap = scrapAmount;
     }
 
+    // This function repairs the player's weapon
+    // TODO - Add weapon functionality and shooting events
     public static void repairWeapon() {
         if (!weaponBroken) {
             System.out.println(UIManager.YELLOW + "▸ Your weapon is still in good condition!");
@@ -72,6 +76,33 @@ public class Inventory {
         }
 
     }
+    // These are the bandage functions for adding, removing, and setting the bandage value.
+    // There is also a healing function
+    /*--------------------------------------------------------------------------------------------*/
+
+    // This function add bandages to the player's inventory
+    public static void addBandage(int bandageAmount) {
+        if (bandageAmount == 1) {
+            bandages = bandages + bandageAmount;
+            System.out.println(UIManager.GREEN + "▸ You gained " + bandageAmount + " bandage.");
+        } else {
+            bandages = bandages + bandageAmount;
+            System.out.println(UIManager.GREEN + "▸ You gained " + bandageAmount + " bandages.");
+        }
+    }
+
+    // This function subtracts bandages from the player's inventory
+    public static void subtractBandage(int bandageAmount) {
+        if (bandages > 0) {
+            bandages = bandages - bandageAmount;
+        }
+    }
+
+    // This function sets the amounts of bandages in the player's inventory
+    public static void setBandage(int bandageAmount) {
+        bandages = bandageAmount;
+    }
+
 
 
 

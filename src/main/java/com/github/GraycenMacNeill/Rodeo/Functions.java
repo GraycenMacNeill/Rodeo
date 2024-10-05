@@ -4,6 +4,17 @@ import java.lang.Thread;
 
 public class Functions {
 
+    // This function is used to end the game and reset all of the game variables
+    // TODO - Make it so that when the game ends it doesn't completely close the console, but only resets game
+    public static void gameOver() {
+        delay(1000);
+        Inventory.ammo = 0;
+        Inventory.scrap = 0;
+        Inventory.weaponBroken = false;
+        System.out.println(UIManager.RED + "Game over!");
+        delay(3000);
+        System.exit(0);
+    }
     // Function to display a loading screen with a customizable animation
     public static void loadingScreen() {
         String[] loadingSteps = {"⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"};  // Loading animations
