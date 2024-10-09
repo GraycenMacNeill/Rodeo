@@ -1,6 +1,8 @@
 package com.github.GraycenMacNeill.Rodeo;
 
 public class UIManager {
+
+    // These are the string color constants
     public static final String RESET = "\u001B[0m";
     public static final String RED = "\u001B[31m";
     public static final String ORANGE = "\u001B[38;5;214m";
@@ -14,7 +16,9 @@ public class UIManager {
     public static final String GRAY = "\u001B[37m";
     public static final String ITALICIZED = "\u001B[3m";
 
-
+    // This function is used for animated text rendering. Prints out word by word
+    // or prints out character by character.
+    // TODO - Make the typeOut function happen faster without sacrificing performance
     public static void typeOut(String message, int delay) throws InterruptedException {
         // Loop through each character in the message
         for (char c : message.toCharArray()) {
