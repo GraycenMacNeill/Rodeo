@@ -8,19 +8,19 @@ public class Stats {
 
     // These are functions for the player's health
     // The player's health is capped at 100
-    // This is the player health symbol: ❖
+    // This is the player health symbol: ❥
     /*--------------------------------------------------------------------------------------------*/
     // This is the function to add to the player's health
     public static void addHealth(int healthAmount) {
         if (healthAmount == 1) {
             health = health + healthAmount;
-            System.out.println(UIManager.GREEN + "❖ You gained " + healthAmount + " health point.");
+            System.out.println(UIManager.GREEN + "❥ You gained " + healthAmount + " health point.");
             if (health > 100) {
                 health = 100;
             }
         } else {
             health = health + healthAmount;
-            System.out.println(UIManager.GREEN + "❖ You gained " + healthAmount + " health points.");
+            System.out.println(UIManager.GREEN + "❥ You gained " + healthAmount + " health points.");
             if (health > 100) {
                 health = 100;
             }
@@ -30,7 +30,7 @@ public class Stats {
     // This is the function to subtract the player's health
     public static void subtractHealth(int healthAmount) {
             health = health - healthAmount;
-            System.out.println(UIManager.RED + "❖ You lost " + healthAmount + " health point.");
+            System.out.println(UIManager.RED + "❥ You lost " + healthAmount + " health point.");
             if (health < 1) {
                 Functions.gameOver();
             }

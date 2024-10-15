@@ -18,13 +18,13 @@ public class Main {
 
         Functions.loadingScreen();
 
-        UIManager.typeOut(UIManager.GRAY + UIManager.ITALICIZED + "You’re lost in deep sleep, the kind that feels endless, until a sudden, violent banging shatters", 25);
-        UIManager.typeOut("the silence. It’s coming from outside, each thud growing louder, more urgent… something’s out", 25);
-        UIManager.typeOut("there, and it’s getting closer..." + UIManager.RESET, 25);
+        UIManager.typeOut(UIManager.GRAY + UIManager.ITALICIZED + "You’re lost in deep sleep, the kind that feels endless, until a sudden, violent banging shatters", 20);
+        UIManager.typeOut("the silence. It’s coming from outside, each thud growing louder, more urgent… something’s out there,", 20);
+        UIManager.typeOut("and it’s getting closer..." + UIManager.RESET, 20);
         input.nextLine();
 
         System.out.println(UIManager.BLUE + "\nJoseph Scotch: " + UIManager.RESET);
-        UIManager.typeOut("By thunder! " + firstName + ", they’re bustin’ through the back door! Get ready, or we’re done for!", 25);
+        UIManager.typeOut("By thunder! " + firstName + ", they’re bustin’ through the back door! Get ready, or we’re done for!", 10);
 
     }
 
