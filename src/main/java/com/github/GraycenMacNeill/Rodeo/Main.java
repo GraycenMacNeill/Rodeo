@@ -6,15 +6,13 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-        int selection;
+        int choice;
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("What is your first name?");
-        String firstName = input.nextLine();
+        System.out.println("What is your name?");
+        String name = input.nextLine();
 
-        System.out.println("What is your last name?");
-        String lastName = input.nextLine();
 
         Functions.loadingScreen();
 
@@ -24,8 +22,10 @@ public class Main {
         input.nextLine();
 
         System.out.println(UIManager.BLUE + "\nJoseph Scotch: " + UIManager.RESET);
-        UIManager.typeOut("By thunder! " + firstName + ", they’re bustin’ through the back door! Get ready, or we’re done for!", 10);
-        System.out.println("HAMBURGER!");
+        UIManager.typeOut("By thunder! " + name + ", they’re bustin’ through the back door! Get ready, or we’re done for!", 20);
+        input.nextLine();
+        System.out.println(UIManager.BLUE + "\nBenjamin Scotch: " + UIManager.RESET);
+        UIManager.typeOut("Look out for the boulders, they’re going to roll downhill!", 20);
 
     }
 
