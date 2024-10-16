@@ -25,6 +25,7 @@ public class Main {
 
         System.out.println(UIManager.BLUE + "\nJoseph Scotch: " + UIManager.RESET);
         UIManager.typeOut("By thunder! " + firstName + ", they’re bustin’ through the back door! Get ready, or we’re done for!", 10);
+        System.out.println("HAMBURGER!");
 
     }
 
