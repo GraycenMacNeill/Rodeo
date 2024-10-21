@@ -5,7 +5,6 @@ import java.lang.Thread;
 public class Functions {
 
     // This function is used to end the game and reset all of the game variables
-    // TODO - Make it so that when the game ends it doesn't completely close the console, but only resets game
     public static void gameOver() {
         delay(1000);
         Inventory.ammo = 0;
@@ -22,7 +21,7 @@ public class Functions {
         for (int i = 0; i < 3; i++) {  // Loop for a few iterations of the animation
             for (String step : loadingSteps) {
                 System.out.print("\r" + step);  // \r moves the cursor back to the start of the line
-                delay(1); }}
+                delay(10); }}
         System.out.println("\r         ");
     }
 

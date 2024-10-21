@@ -18,7 +18,6 @@ public class UIManager {
 
     // This function is used for animated text rendering. Prints out word by word
     // or prints out character by character.
-    // TODO - Make the typeOut function happen faster without sacrificing performance
     public static void typeOut(String message, int delay) throws InterruptedException {
         // Loop through each character in the message
         for (char c : message.toCharArray()) {
